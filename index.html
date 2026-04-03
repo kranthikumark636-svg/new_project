@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CampusFix AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🏫 CampusFix AI</h1>
+    <p>Smart Campus Problem Solver</p>
+</header>
+
+<div class="container">
+
+    <!-- Report Problem -->
+    <div class="card">
+        <h2>➕ Report Problem</h2>
+        <input type="text" id="problem" placeholder="Enter problem">
+        <input type="text" id="location" placeholder="Location">
+        
+        <select id="category">
+            <option>Academic</option>
+            <option>Infrastructure</option>
+            <option>Transport</option>
+            <option>Other</option>
+        </select>
+
+        <button onclick="addProblem()">Submit</button>
+        <p id="aiSuggestion"></p>
+    </div>
+
+    <!-- View Problems -->
+    <div class="card">
+        <h2>📋 Problems List</h2>
+        <ul id="problemList"></ul>
+    </div>
+
+</div>
+
+<footer>
+    <p>Made by Kranthi 🚀</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
